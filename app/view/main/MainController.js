@@ -4,7 +4,7 @@ Ext.define('VoIP.view.main.MainController', {
 
     //buttonClick events
     onAddClick: function () {
-    	
+    	Ext.create('VoIP.view.main.AddWindow').show();
     },
 
     onEditClick: function() {
