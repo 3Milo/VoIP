@@ -13,6 +13,23 @@ Ext.define('VoIP.view.main.MainController', {
 
     onDeleteClick: function() {
 
+        //show popup and remove record when answer is 'yes'
+        Ext.Msg.confirm("Confirmation", "Are you sure you want to delete this number?", function(buttonId){
+            
+            //callback function's parameter has value of clicked button yes/no
+            if(buttonId === 'yes') {
+
+                //remove record from store 
+                store.remove([selectedNumber.index]);
+
+                //synchronize data with localStorage
+                store.sync();
+
+                //disable edit and delete buttons
+                Ext.getCmp('edit-btn').setDisabled(true);
+                Ext.getCmp('delete-btn').setDisabled(true);
+            }
+        });
     },
 
     onTap: function(index, target, record, e) { 
