@@ -13,15 +13,20 @@ Ext.define('VoIP.view.main.Main', {
 		xtype: 'button',
 		text: 'Edit',
 		id: 'edit-btn',
-		handler: 'onEditClick'
+		handler: 'onEditClick',
+		disabled: true
 	}, {
 		xtype: 'button',
 		text: 'Delete',
 		id: 'delete-btn',
-		handler: 'onDeleteClick'
+		handler: 'onDeleteClick',
+		disabled: true
 	}, {
 		xtype: 'grid',
 		store: store,
+		listeners: {
+			itemtap: 'onTap'
+		},
 
 	    columns: [
 	        { text: 'Phone',  dataIndex: 'phone', width: '30%' },
