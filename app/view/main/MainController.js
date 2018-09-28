@@ -16,6 +16,7 @@ Ext.define('VoIP.view.main.MainController', {
 	//show popup and remove record when answer is 'yes'
     	Ext.Msg.confirm("Confirmation", "Are you sure you want to delete this number?", function(buttonId){
             
+	    //popup callback function parameter returns id of clicked button yes or no
             if(buttonId === 'yes') {
 
                 //remove record from store 
