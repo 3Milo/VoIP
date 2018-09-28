@@ -8,7 +8,7 @@ Ext.define('VoIP.view.main.MainController', {
     },
 
     onEditClick: function() {
-    	
+    	Ext.create('VoIP.view.main.EditWindow').show();
     },
 
     onDeleteClick: function() {
