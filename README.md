@@ -3,14 +3,14 @@ Program contains grid with data records. Records can be added, edited and delete
 
 How to run application:
 
-1. Install ExtGen tool.<br><br>
-npm install -g @sencha/ext-gen
+1. Install ExtGen tool.<br>
+npm install -g @sencha/ext-gen<br>
 
-2. Convert existing Ext JS project to NPM project. Run following command in the application folder.<br><br>
-ext-gen upgrade
+2. Convert existing Ext JS project to NPM project. Run following command in the application folder.<br>
+ext-gen upgrade<br>
 
-3. Download required packages using following command in the application folder.<br><br>
-npm install
+3. Download required packages using following command in the application folder.<br>
+npm install<br>
 
-4. Run application.<br><br>
-npm run all
+4. Run application.<br>
+npm run all<br>
