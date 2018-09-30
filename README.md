@@ -20,10 +20,14 @@ or
 1. In the application folder download required packages.<br>
 npm install<br>
 
-2. Build and run application in browser.<br>
-sencha app watch<br>
+2.  Update your folder with Sencha Cmd's application scaffold.<br>
+sencha app install --framework=/path/to/extjs/<br>
+"/path/to/extjs/" should be replaced with the path to wherever there is unzipped the Ext JS framework.<br>
 
-3. This requires installation of Sencha Cmd and download ExtJS SDK.<br>
+3. Build and run application in browser.<br>
+sencha app watch<br><br>
+
+This second method requires installation of Sencha Cmd and download ExtJS SDK.<br>
 https://www.sencha.com/products/sencha-cmd/<br>
 https://www.sencha.com/products/extjs/evaluate/
 
