@@ -17,15 +17,13 @@ npm run all<br>
 
 or
 
-1. Download and install Sencha Cmd.<br>
-https://www.sencha.com/products/sencha-cmd/<br>
-
-2. Download ExtJS SDK.<br>
-https://www.sencha.com/products/extjs/evaluate/<br>
-
-3. In the application folder download required packages.<br>
+1. In the application folder download required packages.<br>
 npm install<br>
 
-4. Build and run application in browser.<br>
-sencha app watch
+2. Build and run application in browser.<br>
+sencha app watch<br><br>
+
+This requires installation of Sencha Cmd and download ExtJS SDK.<br>
+https://www.sencha.com/products/sencha-cmd/<br>
+https://www.sencha.com/products/extjs/evaluate/
 
