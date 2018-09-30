@@ -1,7 +1,7 @@
 # VoIP
 Program contains grid with data records. Records can be added, edited and deleted. Each record contains number with specific validation. Data items are being saved in browser's local storage. Using extJS framework.
 
-<h1>How to run:</h1>
+<h3>How to run:</h3>
 
 1. Install ExtGen tool.<br>
 npm install -g @sencha/ext-gen<br>
@@ -21,7 +21,7 @@ or
 npm install<br>
 
 2. Build and run application in browser.<br>
-sencha app watch<br><br>
+sencha app watch<br>
 
 3. This requires installation of Sencha Cmd and download ExtJS SDK.<br>
 https://www.sencha.com/products/sencha-cmd/<br>
