@@ -32,16 +32,16 @@ Ext.define('VoIP.view.main.EditWindow', {
         id: 'edit_type',
         options: [{
             text: 'User',
-            value: 'first'
+            value: 'User'
         }, {
             text: 'Conf. Room',
-            value: 'second'
+            value: 'Conf. Room'
         }, {
             text: 'Fax',
-            value: 'third'
+            value: 'Fax'
         }, {
         	text: 'Not in Use',
-        	value: 'fourth'
+        	value: 'Not in Use'
         }] 
     }, {
     	xtype: 'textfield',

@@ -34,16 +34,16 @@ Ext.define('VoIP.view.main.AddWindow', {
         value: 'first',
         options: [{
             text: 'User',
-            value: 'first'
+            value: 'User'
         }, {
             text: 'Conf. Room',
-            value: 'second'
+            value: 'Conf. Room'
         }, {
             text: 'Fax',
-            value: 'third'
+            value: 'Fax'
         }, {
         	text: 'Not in Use',
-        	value: 'fourth'
+        	value: 'Not in Use'
         }] 
     }, {
     	xtype: 'textfield',
