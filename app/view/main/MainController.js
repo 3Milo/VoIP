@@ -4,19 +4,19 @@ Ext.define('VoIP.view.main.MainController', {
 
     //buttonClick events
     onAddClick: function () {
-    	
+    	Ext.create('VoIP.view.main.AddWindow').show();
     },
 
     onEditClick: function() {
-    	
+    	Ext.create('VoIP.view.main.EditWindow').show();
     },
 
     onDeleteClick: function() {
-
-        //show popup and remove record when answer is 'yes'
-        Ext.Msg.confirm("Confirmation", "Are you sure you want to delete this number?", function(buttonId){
+	
+	   //show popup and remove record when answer is 'yes'
+    	Ext.Msg.confirm("Confirmation", "Are you sure you want to delete this number?", function(buttonId){
             
-            //callback function's parameter has value of clicked button yes/no
+	    //popup callback function parameter returns id of clicked button yes or no
             if(buttonId === 'yes') {
 
                 //remove record from store 
