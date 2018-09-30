@@ -35,7 +35,7 @@ Ext.define('VoIP.view.main.Main', {
 	        { text: 'Note', dataIndex: 'note', width: '35%' }
 	    ],
 
-	    height: 300,
+	    height: 500,
 	    layout: 'fit',
 	    fullscreen: false
 		}]

@@ -31,14 +31,12 @@ if (store.getData().items.length === 0) {
         channels: 12,  
         type: "Fax", 
         note: 'Local Fax'
-    });
-    store.add({ 
+    }, { 
         phone: '1342356232',  
         channels: 8,  
         type: "Not in Use", 
         note: 'Bob\'s previous phone'
-    });
-    store.add({ 
+    }, { 
         phone: '5674528724', 
         channels: 20,  
         type: "User", 
