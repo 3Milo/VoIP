@@ -9,7 +9,8 @@ Ext.define('VoIP.view.main.AddWindowController', {
     onSubmitClick: function () {
 
     	//if fields are fullfilled correctly
-    	if (Ext.getCmp('add_phone').isValid() && Ext.getCmp('add_phone').getValue() !== null) {
+    	if (Ext.getCmp('add_phone').isValid() && 
+            Ext.getCmp('add_phone').getValue() !== null) {
     		
     		//insert new record to store
 		    store.insert(0, {

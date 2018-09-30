@@ -11,7 +11,7 @@ Ext.define('VoIP.view.main.AddWindow', {
     	xtype: 'numberfield',
         label: 'Phone Number',
         id: 'add_phone',
-        validators: /^[0-9]{8,16}$/ //niepotrzebne to [0-9] bo juz i tak tylko numery mozna wpisywac, ale jakos bez tego nie dziala ;/
+        validators: /^[0-9]{8,16}$/ //only numbers, from 8 to 16 length
     }, {
     	xtype: 'sliderfield',
         label: 'Channels',
@@ -22,9 +22,9 @@ Ext.define('VoIP.view.main.AddWindow', {
         increment: 1,
         value: 2,
         listeners: {
+            //show value selected on slider when change
         	change: function() {
         		this.setHtml(this.getValue());
-                //show value selected on slider
         	}
         }
     }, {
