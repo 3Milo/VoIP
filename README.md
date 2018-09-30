@@ -3,4 +3,5 @@ Program contains grid with data records. Records can be added, edited and delete
 
 How to run application:
 
-1. Install ExtGen tool       npm install -g @sencha/ext-gen
+1. Install ExtGen tool<br>
+npm install -g @sencha/ext-gen
