@@ -8,9 +8,18 @@ Ext.define('VoIP.view.main.AddWindowController', {
 
     onSubmitClick: function () {
 
-    	//if fields are fullfilled correctly
-    	if (Ext.getCmp('add_phone').isValid() && 
-            Ext.getCmp('add_phone').getValue() !== null) {
+    	let validator;
+
+        if(Ext.getCmp('add_phone').getValue() !== null) {
+
+            //change number to string and get its length
+            validator = Ext.getCmp('add_phone').getValue().toString().length;
+        } else {
+            validator = 0;
+        }
+        
+        //if fields are fullfilled correctly
+        if ( validator > 8 && validator < 16 ) {
     		
     		//insert new record to store
 		    store.insert(0, {

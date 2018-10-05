@@ -10,8 +10,8 @@ Ext.define('VoIP.view.main.AddWindow', {
     items: [{
     	xtype: 'numberfield',
         label: 'Phone Number',
-        id: 'add_phone',
-        validators: /^[0-9]{8,16}$/ //only numbers, from 8 to 16 length
+        id: 'add_phone'
+        //validators: /^[0-9]{8,16}$/ unfortunatelly it causes error after build app, so removed
     }, {
     	xtype: 'sliderfield',
         label: 'Channels',
